@@ -1,0 +1,77 @@
+/* pages/pell/pell.wxss */
+.bg-b{
+  background:rgb(245,245,245); 
+  height:623px;
+}
+.none{
+  width:100%;
+  height:623px;
+  background: rgb(245,245,245)
+}
+.none>image{
+  width: 100%;
+  height:267px;
+}
+.pellitem{
+  display: flex;
+  padding:5px 0 0 5px;
+}
+.pellitem>image{
+  width:100px;
+  height:100px;
+}
+.pellitem>view{
+  margin:13px 0 10px 10px;
+}
+.pellitem>view>view:nth-child(1){
+  color: rgb(51,51,51);
+  font-size: 16px;
+}
+.pellitem>view>view:nth-child(2){
+  margin-top:30px;
+}
+.Cprice{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.Cprice>view:nth-child(2){
+  position: relative;
+  left: 45px;
+  color: rgb(255,159,6);
+}
+.Cprice>view:nth-child(1){
+  color: #666;
+  font-size: 16px;
+}
+.pay{
+  display: flex;
+  justify-content: space-between;
+  background:#fff;
+  position: fixed;
+  top:580px;
+  width:100%;
+  align-items: center;
+}
+.pay>view:nth-child(1){
+  display: flex;
+  align-items: center;
+}
+.pay>view:nth-child(1)>view:nth-child(1){
+  margin-left:10px;
+}
+.pay>view:nth-child(1)>view:nth-child(2){
+  color: rgb(255,159,6);
+  font-size: 25px
+}
+.pay>view:nth-child(2){
+  background: rgb(255,159,6);
+  color: #fff;
+  height:45px;
+  width:100px;
+  text-align: center;
+  line-height: 45px;
+}
+.end{
+  height:45px;
+}

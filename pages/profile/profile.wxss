@@ -1,0 +1,135 @@
+.head{
+  background: rgb(58,217,100);
+  height:182px;
+
+}
+.head>view:nth-child(1){
+  margin:0 25px 0px 20px;
+  padding-top:15px;
+  display: flex;
+}
+.head>view>image{
+  width:70px;
+  height:60px;
+}
+.head>view>.login-detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8px 0;
+}
+.head>view>.login-detail>text:nth-child(1){
+  color: #fff;
+  font-size: 16px;
+}
+.head>view>.login-detail>text:nth-child(2){
+  color: rgb(214,247,223);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.head>view:nth-child(2){
+  margin:5px 0px; 
+  display: flex;
+  justify-content: space-around;
+}
+.head>view:nth-child(2)>view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.head>view:nth-child(2)>view>text{
+  color:#fff;
+  font-size: 14px;
+}
+.black{
+  display: flex;
+  justify-content: center;
+}
+.black>view{
+  background: rgb(43,49,46);
+  color: rgb(236,217,163);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:5px 0px;
+  border-radius: 10px;
+  margin-top: 15px;
+  width: 97%;
+}
+.black>view>image{
+  width:108px;
+  height:34px;
+  padding-left: 15px;
+}
+.black>view>text{
+  font-size: 12px;
+  padding-right: 15px;
+}
+.vip{
+  display: flex;
+  padding-top:15px;
+  justify-content: space-around;
+  padding-bottom: 15px;
+  background: rgb(245,245,245);
+}
+.vip>.vip-square{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #fff;
+  padding:13px 20px;
+  width:34%;
+}
+.vip>.vip-square>view:nth-child(1){
+  display: flex;
+  color:rgb(51,51,51);
+  font-size: 15px;
+  font-weight: bold;
+}
+.vip>.vip-square>view:nth-child(2){
+  margin-top:7px;
+  color:rgb(153,153,153);
+  font-size: 13px;
+}
+.vip>.vip-square>view{
+  display: flex;
+  align-items: center;
+}
+.vip>.vip-square>view>image{
+  width:25px;
+  height:25px;
+  margin-right: 5px;
+}
+.set{
+  background: rgb(245,245,245);
+  height:336px;
+}
+.set-img{
+  width:25px;
+  height:25px;
+}
+.set-item{
+  display: flex;
+  flex-wrap: wrap;
+  margin:0px 10px 0 10px;
+  background: #fff;
+  border-radius: 15px;
+  padding:0 10px;
+}
+.set-w{
+  width:25%;
+  margin-top:25px;
+  margin-bottom: 15px;
+}
+.set-item>view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.set-item>view>text{
+  font-size: 14px;
+  color: rgb(51,51,51);
+  margin-top:8px;
+}

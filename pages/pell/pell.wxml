@@ -1,0 +1,28 @@
+<wxs module="filters" src="./fliters.wxs"></wxs>
+<view wx:if="{{!showitem}}" class="none">
+  <image src="../img/pellimg.png"></image>
+</view>
+<view wx:if="{{showitem}}" class="bg-b">
+  <view wx:for="{{plllist}}" wx:key="index">
+    <view class="pellitem">
+      <image src="http://127.0.0.1:3333/img/{{item.pimg}}"></image>
+      <view>
+        <view>{{item.pname}}</view>
+        <view class="Cprice">
+          <view>数量：{{pcount[index]}}</view>
+          <view>价钱：￥{{filters.toFix(pcount[index]*item.price)}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="end"></view>
+  <view class="pay">
+    <view>
+      <view>总价：</view>
+      <view>￥{{filters.toFix(total)}}</view>
+    </view>
+    <view>
+      支付
+    </view>
+  </view>
+</view>

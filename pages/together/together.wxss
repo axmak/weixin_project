@@ -1,0 +1,105 @@
+/* pages/together/together.wxss */
+.search{
+  position: fixed;
+  top:0px;
+  background: #fff;
+  width: 100%;
+}
+.search image{
+  width:20px;
+  height:20px;
+}
+.search .inputword>view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search view>button{
+  font-size: 11px;
+  background: transparent;
+  border-color:transparent !important;
+  padding:0 5px;
+}
+.search .inputword{
+  display: flex;
+  margin: 5px 0.5rem 5px 0.5rem;
+  justify-content: space-around;
+}
+.search .inputword>input{
+  background: rgb(245,245,245);
+  border-radius: 10px;
+  font-size: 13px;
+  padding-left: 10px;
+  width:85%;
+}
+.m-38{
+  height:38px;
+}
+.p-bg{
+ background:rgb(243,243,243);
+ height:295px; 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.product{
+  height:280px;
+  background: #fff;
+  border-radius: 10px;
+}
+.product>image{
+  width: 100%;
+  height:150px; 
+}
+.product>view{
+  padding: 0 5px;
+}
+.product>view>view:nth-child(1){
+  font-size: 16px;
+  line-height: 1.4;
+  width:345px;
+  height:44px;
+}
+.product>view>view:nth-child(2){
+  color: rgb(159,159,159);
+  font-size: 22rpx;
+  margin:10rpx 0 35rpx 0;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.price>view{
+  display: flex;
+  align-items: baseline;
+}
+.price>view:nth-child(1)>view:nth-child(1)>text:nth-child(1){
+  color: rgb(255,138,0);
+  font-size: 50rpx;
+}
+.price>view:nth-child(1)>view:nth-child(1)>text:nth-child(2){
+  color: rgb(255,138,0);
+  font-size: 35rpx;
+}
+.price>view:nth-child(1)>view:nth-child(2){
+  margin-left: 30rpx;
+  font-size: 25rpx;
+  text-decoration: line-through;
+}
+.price>view:nth-child(1)>view:nth-child(3){
+  margin-left: 30rpx;
+  color: rgb(156,156,156);
+  font-size: 25rpx;
+}
+.price>view:nth-child(2)>navigator{
+  background:rgb(253,185,87);
+  color: #fff;
+  font-size: 28rpx; 
+  border-radius: 30px;
+  padding: 5px 13px 5px 16px;
+}
+.s-detail{
+  height:517px;
+  background: rgb(245,245,245);
+}

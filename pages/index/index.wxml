@@ -1,0 +1,68 @@
+<wxs module="filters" src="./fliters.wxs"></wxs>
+<view class="search">
+  <image src="../img/微信图片_20190517181818.png"></image>
+  <input placeholder='提货门店：海珠广场'></input>
+  <view class="two-icon">
+    <view class="two-d">
+      <image src="../img/fangdajing.png"></image>
+      <text>搜索</text>
+    </view>
+    <view class="two-d">
+      <image src="../img/hym.png"></image>
+      <text>会员码</text>
+    </view> 
+  </view>
+</view>
+
+
+<view class='cu-custom'>
+</view>
+<view class="VerticalBox">
+  <scroll-view class="VerticalNav nav nav-bg" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}" style="height:calc(100vh - 375rpx)">
+    <view class="cu-item {{index==TabCur?'text-green cur':''}} ind" wx:for="{{lists}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+      {{item.nname}}
+    </view>
+  </scroll-view>
+  <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 375rpx)" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+    <view class="product" wx:for="{{plist}}">
+      <view>
+        <image src="http://127.0.0.1:3333/img/{{item.pimg}}"></image>
+        <view class="pd">
+          <view>{{item.pname}}</view>
+          <view>{{item.pdetails}}</view>
+          <view>
+            <view>￥{{item.price}}</view>
+            <view class="mix">
+              <view>￥{{item.pdprice}}</view>
+              <image src="../img/zxj.png"></image>
+              <view class="count">
+                <view class="cut" bindtap='cut' wx:if="{{pcount[index]>0}}" data-id='{{item.pid}}'>
+                  <view>-</view>
+                </view>
+                <view class="number" wx:if="{{pcount[index]>0}}">{{pcount[index]}}</view>
+                <view class="add" bindtap='add' data-id='{{item.pid}}' data-kid="{{index}}">
+                  <view>+</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<view wx:if="{{sum>0}}" class="bs">
+  <view class="buy-sq">
+    <view>
+      <image src="../img/购物车-23.png"></image>
+      <view class="buycount">{{sum}}</view>
+    </view>
+  </view>
+  <view class="totalprice">
+    <view>￥{{filters.toFix(total)}}</view>
+    <view>不含运费</view>
+  </view>
+  <view class="pay" bindtap='topell'>
+    <view>去结算</view>  
+  </view>
+</view>

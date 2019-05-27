@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/together/together",
+    "pages/pell/pell",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3ad964",
+    "navigationBarTitleText": "水果商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "及时达",
+        "iconPath": "pages/img/cartGray.png",
+        "selectedIconPath": "pages/img/cartGreen.png"
+      },
+      {
+        "pagePath": "pages/together/together",
+        "text": "拼团",
+        "iconPath": "pages/img/toGray.png",
+        "selectedIconPath": "pages/img/toGreen.png"
+      },
+      {
+        "pagePath": "pages/pell/pell",
+        "text": "订单",
+        "iconPath": "pages/img/pellGray.png",
+        "selectedIconPath": "pages/img/pellGreen.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "会员",
+        "iconPath": "pages/img/vipGray.png",
+        "selectedIconPath": "pages/img/vipGreen.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,67 @@
+<view class="search">
+  <form bindsubmit='getinfo'>
+    <view class="inputword">
+      <input name="key" placeholder='推介商品'></input>
+      <view>
+        <button formType="submit">搜索</button>
+      </view>
+    </view> 
+  </form>
+</view>
+<view class="m-38"></view>
+<view wx:if="{{!showsearch}}">
+  <view class='p-bg' wx:for="{{list}}">
+    <view class="product">
+      <image src="http://127.0.0.1:3333/img/{{item.timg}}"></image>
+      <view>
+        <view>
+          {{item.tdetails}}
+        </view>
+        <view>
+          {{item.tcount}}
+        </view>
+        <view class="price">
+          <view>
+            <view>
+              <text>￥{{item.price}}.</text>
+              <text>00</text>
+            </view>
+            <view>￥{{item.nprice}}</view>
+            <view>·已团购{{item.sellcount}}件</view>
+          </view>
+          <view>
+            <navigator>去拼团 ></navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="s-detail" wx:if="{{showsearch}}">
+  <view class='p-bg' wx:for="{{slist}}">
+    <view class="product">
+      <image src="http://127.0.0.1:3333/img/{{item.timg}}"></image>
+      <view>
+        <view>
+          {{item.tdetails}}
+        </view>
+        <view>
+          {{item.tcount}}
+        </view>
+        <view class="price">
+          <view>
+            <view>
+              <text>￥{{item.price}}.</text>
+              <text>00</text>
+            </view>
+            <view>￥{{item.nprice}}</view>
+            <view>·已团购{{item.sellcount}}件</view>
+          </view>
+          <view>
+            <navigator>去拼团 ></navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
